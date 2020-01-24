@@ -21,7 +21,7 @@ The following methods are available:
 # Show Toast
 #@param String message
 #@param bool max (if true = LONG, else SHORT)
-showBanner(message, max)
+showToast(message, max)
 
 ```
 Sample example
