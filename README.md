@@ -28,14 +28,15 @@ Sample example
 -------------
 ## Example:
 ```python
+
 var Toast
-onready var editText = $TextEdit
+onready var editText = get_node("TextEdit")
 
 func _ready():
 	if(Engine.has_singleton("ZubcovToast")):
 		Toast = Engine.get_singleton("ZubcovToast")
 		pass
-	$btn_show.connect("pressed", self, "showToast")
+	get_node("btn_show").connect("pressed", self, "showToast")
 	pass
 
 
