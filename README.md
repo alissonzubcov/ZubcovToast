@@ -19,8 +19,8 @@ The following methods are available:
 ```python
 
 # Show Toast
-#@param String message
-#@param bool max (if true = LONG, else SHORT)
+# @param String message
+# @param bool max (if true = LONG, else SHORT)
 showToast(message, max)
 
 ```
