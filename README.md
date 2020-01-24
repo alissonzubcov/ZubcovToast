@@ -23,8 +23,32 @@ The following methods are available:
 #@param bool max (if true = LONG, else SHORT)
 showBanner(message, max)
 
+```
+Sample example
+-------------
+## Example:
+```python
+var Toast
+onready var editText = $TextEdit
+
+func _ready():
+	if(Engine.has_singleton("ZubcovToast")):
+		Toast = Engine.get_singleton("ZubcovToast")
+		pass
+	$btn_show.connect("pressed", self, "showToast")
+	pass
+
+
+#events
+
+func showToast():
+	Toast.showToast(editText.text, true)
+	print(editText.text)
+	pass
 
 ```
+
+------------
 
 
 --------------
